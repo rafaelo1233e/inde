@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(9,9,121,1) 55%, rgba(0,206,251,1) 94%, rgba(0,212,255,1) 97%);
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 18px;  
+        box-shadow: 0 0 10px black;
+    }
+
+    h1 {
+        text-align: center;
+       margin-bottom: 20px;
+      font-size: 40px;
+
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
+        width: calc(100% - 22px);
+        padding: 8px;
+        border: 1px solid #888888;
+        border-radius: 10px;
+        
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        box-shadow:  0 0 10px 
+        rgba(0,0,20);
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #resultado {
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+   .overflow{
+     padding: 30px;
+     background-color:#000000;
+     text-align: center;
+   }
+    img{
+      width: 90px;
+    }
+    p{
+      color: #ffffff;
+      font-size: 20px;
+      font-family:Trebuchet MS, sans-serif;
+      text-align: left;
+      margin-left: 120px;
+    }
+    
+  </style>
+  <div class="overflow"></div>
+    <div class="container">
+        <h1>Calculadora Financeira</h1>
+        <div class="input-group">
+            <label for="receitas-fixas">Receitas Fixas:</label>
+            <input type="text" id="receitas-fixas">
+        </div>
+        <div class="input-group">
+            <label for="receitas-variaveis">Receitas Variáveis:</label>
+            <input type="text" id="receitas-variaveis">
+        </div>
+        <div class="input-group">
+            <label for="despesas-fixas">Despesas Fixas:</label>
+            <input type="text" id="despesas-fixas">
+        </div>
+        <div class="input-group">
+            <label for="despesas-variaveis">Despesas Variáveis:</label>
+          <input type="text" id="despesas-variaveis">
+                  </div>
+                  <button onclick="calcular()">Calcular</button>
+                  <div id="resultado"></div>
+              </div>
+        <div class="text">
+          <P>
+           Feito por Rafaelo<br>
+        
+            
+          </P>
+        </div>
+              <script src="script.js"></script>
+          </body>
+          </html>
